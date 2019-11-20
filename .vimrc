@@ -89,3 +89,12 @@ nmap <F3> i<C-R>=strftime("%d-%m-%Y %a %I:%M %p")<CR><Esc>
 imap <F3> <C-R>=strftime("%d-%m-%Y %a %I:%M %p")<CR>
 
 
+" Instead of failing a command because of unsaved changes, instead raise a
+" dialogue asking if you wish to save changed files.
+set confirm
+
+
+
+
+
+
