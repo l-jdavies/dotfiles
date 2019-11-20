@@ -42,8 +42,17 @@ set background=dark
 set t_Co=256
 colorscheme PaperColor
 
-" Switch on syntax highlighting for vim-ruby
+" Enable vim-ruby extensions
 syntax on
+set nocompatible      " We're running Vim, not Vi!
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+
+
+
+
+
 " Add location of ruby for plugin
 let g:ruby_path = '/home/DAVIEL20/software/miniconda2/envs/ruby/'
 
