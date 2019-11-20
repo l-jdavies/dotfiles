@@ -24,6 +24,8 @@ Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-ruby/vim-ruby'
+
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -35,10 +37,17 @@ if !has('gui_running')
   set t_Co=256
   endif
 
-" Config for papercolor-theme plugin
+" Config for papercolor theme
+set background=dark   
 set t_Co=256
-set background=dark
 colorscheme PaperColor
+
+" Switch on syntax highlighting for vim-ruby
+syntax on
+" Add location of ruby for plugin
+let g:ruby_path = '/home/DAVIEL20/software/miniconda2/envs/ruby/'
+
+
 
 " Default enable indent guides from plugin
 let g:indent_guides_enable_on_vim_startup = 1
