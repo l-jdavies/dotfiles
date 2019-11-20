@@ -25,7 +25,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-ruby/vim-ruby'
-
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -48,9 +48,6 @@ set nocompatible      " We're running Vim, not Vi!
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
-
-
-
 
 
 " Add location of ruby for plugin
@@ -84,5 +81,11 @@ syntax on
 set expandtab
 set tabstop=2
 set shiftwidth=4
+set autoindent
+set softtabstop=2
+
+" Add date stamp with F3
+nmap <F3> i<C-R>=strftime("%d-%m-%Y %a %I:%M %p")<CR><Esc>
+imap <F3> <C-R>=strftime("%d-%m-%Y %a %I:%M %p")<CR>
 
 
