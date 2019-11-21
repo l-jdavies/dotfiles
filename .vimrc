@@ -62,9 +62,12 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "General
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Run 'sudo apt-get install vim-gtk'
+" To enable copy and paste from vim to system keyboard in wsl follow: https://github.com/Microsoft/WSL/issues/892
+" Enable copy and paste to system keyboard
+set clipboard=unnamed
+set paste
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "File settings
@@ -92,6 +95,7 @@ imap <F3> <C-R>=strftime("%d-%m-%Y %a %I:%M %p")<CR>
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
 set confirm
+
 
 
 

@@ -59,3 +59,11 @@ PS1="\[\`if [[ \$? = "0" ]]; then echo '\e[32m\h\e[0m'; else echo '\e[31m\h\e[0m
 
 # When cd automatically list dir contents
 cdls() { cd "$@" && ls; }
+
+# Enable Xlaunch for copy and paste between vim and windows
+export DISPLAY=localhost:0.0
+
+
+# Start Xserver for shared clipboard
+"/mnt/c/Laura/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/config.xlaunch" -run config.xlaunch
+
