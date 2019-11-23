@@ -64,6 +64,4 @@ cdls() { cd "$@" && ls; }
 export DISPLAY=localhost:0.0
 
 
-# Start Xserver for shared clipboard
-"/mnt/c/Laura/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/config.xlaunch" -run config.xlaunch
 

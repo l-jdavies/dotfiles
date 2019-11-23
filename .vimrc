@@ -63,11 +63,17 @@ let g:indent_guides_enable_on_vim_startup = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Run 'sudo apt-get install vim-gtk'
-" To enable copy and paste from vim to system keyboard in wsl follow: https://github.com/Microsoft/WSL/issues/892
-" Enable copy and paste to system keyboard
-set clipboard=unnamed
-set paste
+" WSL yank support
+let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
+if executable(s:clip)
+  augroup WSLYank
+      autocmd!
+      autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+  augroup END
+endif
+
+
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "File settings
