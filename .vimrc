@@ -59,7 +59,8 @@ let g:ruby_path = '/home/DAVIEL20/software/miniconda2/envs/ruby/'
 let g:indent_guides_enable_on_vim_startup = 1
 
 
-
+" Stop markdown plug in folding all sections as default
+let g:vim_markdown_folding_disabled = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
