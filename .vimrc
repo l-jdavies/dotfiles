@@ -65,6 +65,9 @@ let g:vim_markdown_folding_disabled = 1
 "General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " WSL yank support
+" Check clipboard support is enabled with `vim --version | grep clipboard` if
+" you don't see `+clipboard then install `vim-gtk`.
+
 let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
 if executable(s:clip)
   augroup WSLYank
