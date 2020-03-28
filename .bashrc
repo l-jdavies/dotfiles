@@ -150,4 +150,4 @@ cdls() { cd "$@" && ls; }
 # Add file path to z.sh
 . ~/z/z.sh
 # Add file path to rvm (ruby version manager)
-source ~/.rvm/scripts/rvm
+source /usr/share/rvm/scripts/rvm
