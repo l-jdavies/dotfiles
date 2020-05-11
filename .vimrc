@@ -21,9 +21,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'scrooloose/nerdtree'
 
@@ -107,7 +104,8 @@ imap <F3> <C-R>=strftime("%d-%m-%Y %a %I:%M %p")<CR>
 set confirm
 
 
-
+" Enable highlighting with mouse
+set mouse=a
 
 
 
