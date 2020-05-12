@@ -107,6 +107,8 @@ set confirm
 " Enable highlighting with mouse
 set mouse=a
 
-
+" Enable show white space as dot and tab as arrow
+set list
+set listchars=tab:→\ ,space:·
 
 
