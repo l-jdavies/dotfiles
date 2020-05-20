@@ -88,7 +88,7 @@ syntax on
 " Change tab to two spaces
 set expandtab
 set tabstop=2
-set shiftwidth=4
+set shiftwidth=2
 set autoindent
 set softtabstop=2
 
