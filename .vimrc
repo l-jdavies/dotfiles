@@ -23,6 +23,8 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jiangmiao/auto-pairs'
+
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -55,7 +57,9 @@ let g:ruby_path = '/home/DAVIEL20/software/miniconda2/envs/ruby/'
 " Default enable indent guides from plugin
 let g:indent_guides_enable_on_vim_startup = 1
 
-
+" Enable fly mode for Auto Pairs plugin
+let g:AutoPairsFlyMode = 0
+let g:AutoPairsShortcutBackInsert = '<M-b>'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -92,9 +96,6 @@ set shiftwidth=2
 set autoindent
 set softtabstop=2
 
-" Add date stamp with F3
-nmap <F3> i<C-R>=strftime("%d-%m-%Y %a %I:%M %p")<CR><Esc>
-imap <F3> <C-R>=strftime("%d-%m-%Y %a %I:%M %p")<CR>
 
 
 " Instead of failing a command because of unsaved changes, instead raise a
