@@ -24,7 +24,7 @@ Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
-
+Plugin 'tpope/vim-endwise'
 
 call vundle#end()            " required
 filetype plugin indent on
