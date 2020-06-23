@@ -25,6 +25,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-endwise'
+Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -60,6 +61,10 @@ let g:indent_guides_enable_on_vim_startup = 1
 " Enable fly mode for Auto Pairs plugin
 let g:AutoPairsFlyMode = 0
 let g:AutoPairsShortcutBackInsert = '<M-b>'
+
+" Enable fenced code block languages for vim-markdown plugin
+let g:vim_markdown_fenced_languages
+let g:vim_markdown_folding_disabled = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
