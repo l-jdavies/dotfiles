@@ -1,3 +1,7 @@
+
+# Add RVM to PATH for scripting. Make sure this is the first PATH variable change.
+export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -151,3 +155,4 @@ cdls() { cd "$@" && ls; }
 . ~/z/z.sh
 # Add file path to rvm (ruby version manager)
 source /usr/share/rvm/scripts/rvm
+
