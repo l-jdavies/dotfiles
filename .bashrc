@@ -149,7 +149,14 @@ PS1="\[\`if [[ \$? = "0" ]]; then echo '\e[32m\h\e[0m'; else echo '\e[31m\h\e[0m
 
 
 # When cd automatically list dir contents
-cdls() { cd "$@" && ls; }
+cdl () { 
+  cd $1 && ls
+}
+
+mkdirr () {
+  mkdir -p $1
+  cd $1 
+}
 
 # Add file path to z.sh
 . ~/z/z.sh
