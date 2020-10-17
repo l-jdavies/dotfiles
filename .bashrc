@@ -88,7 +88,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
     alias push="git push origin master"
     alias pull="git pull origin master"
-    alias psql="sudo service postgresql"
+    alias pg="sudo service postgresql"
+    alias runpg="sudo -u postgres psql"
 fi
 
 # colored GCC warnings and errors
