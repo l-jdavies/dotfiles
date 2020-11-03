@@ -111,6 +111,7 @@ alias pull="git pull origin master"
 alias pgstart="brew services start postgresql"
 alias pgstop="brew services stop postgresql"
 alias runpg="sudo -u postgres psql"
+alias tmux='tmux -2'
 
 ##############################
 # Functions
