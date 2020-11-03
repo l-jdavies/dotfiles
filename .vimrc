@@ -72,17 +72,15 @@ let g:vim_markdown_folding_disabled = 1
 " Check clipboard support is enabled with `vim --version | grep clipboard` if
 " you don't see `+clipboard then install `vim-gtk`.
 
-let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
-if executable(s:clip)
-  augroup WSLYank
-      autocmd!
-      autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
-  augroup END
-endif
+" let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
+" if executable(s:clip)
+"  augroup WSLYank
+"      autocmd!
+"      autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+"  augroup END
+" endif
 
-"Pinebook pro copy from vim into system clipboard with "+y then paste into
-"terminal with ctrl+shift+v (see keymaps)
-"set clipboard=unnamed
+set clipboard=unnamed
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
