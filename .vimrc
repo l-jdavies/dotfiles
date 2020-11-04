@@ -51,7 +51,7 @@ filetype plugin on    " Enable filetype-specific plugins
 
 
 " Add location of ruby for plugin
-let g:ruby_path = '/home/DAVIEL20/software/miniconda2/envs/ruby/'
+"let g:ruby_path = '/home/DAVIEL20/software/miniconda2/envs/ruby/'
 
 
 
@@ -118,6 +118,9 @@ set listchars=tab:→\ ,space:·
 " Silence annoying beep sound in WSL
 set visualbell
 
+
+" Allow backspace to delete characters in insert mode
+set backspace=indent,eol,start
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key maps
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
