@@ -2,8 +2,6 @@
 "Vundle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
-
 " Installed the package manager Vundle
 " Installed from https://github.com/VundleVim/Vundle.vim
 " To add plugins, add in the 'Plugin' list then run ':so ~/.vimrc' followed by
@@ -30,7 +28,11 @@ Plugin 'plasticboy/vim-markdown'
 " HTML and CSS validation plugin using W3C validator API
 Plugin 'arunsahadeo/webval'  
 
-call vundle#end()            " required
+" Shows line changes
+Plugin 'mhinz/vim-signify'
+
+call vundle#end()
+
 filetype plugin indent on
 
 " Config for lightline.vim plugin
@@ -68,7 +70,14 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 " Enable fenced code block languages for vim-markdown plugin
 let g:vim_markdown_fenced_languages = ['rb=ruby']
 let g:vim_markdown_folding_disabled = 1
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" default updatetime 4000ms is not good for async update (signify)
+set updatetime=100
+
+" Map the :NERDTree command to ctrl+n
+:nnoremap <C-n> :NERDTreeToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " WSL yank support
