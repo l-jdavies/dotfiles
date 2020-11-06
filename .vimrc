@@ -27,6 +27,9 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-endwise'
 Plugin 'plasticboy/vim-markdown'
 
+" HTML and CSS validation plugin using W3C validator API
+Plugin 'arunsahadeo/webval'  
+
 call vundle#end()            " required
 filetype plugin indent on
 
