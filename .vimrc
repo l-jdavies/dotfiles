@@ -134,7 +134,10 @@ set visualbell
 
 " Allow backspace to delete characters in insert mode
 set backspace=indent,eol,start
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Highlight line cursor is on
+set cursorline
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key maps
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
