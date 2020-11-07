@@ -32,6 +32,14 @@ Plugin 'arunsahadeo/webval'
 " Shows line changes
 Plugin 'mhinz/vim-signify'
 
+" Intellisense engine
+Plugin 'neoclide/coc.nvim'
+
+" Fuzzy file search
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+Plugin 'airblade/vim-rooter'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -77,6 +85,12 @@ set updatetime=100
 
 " Map the :NERDTree command to ctrl+n
 :nnoremap <C-n> :NERDTreeToggle<CR>
+
+" Close NERDTree once file is opened
+let NERDTreeQuitOnOpen=1
+
+" Source config file for coc.nvim
+source $HOME/.config/nvim/plug-config/coc.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "General

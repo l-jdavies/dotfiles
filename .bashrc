@@ -165,3 +165,5 @@ mkdirr () {
 # Add file path to rvm (ruby version manager)
 source /usr/share/rvm/scripts/rvm
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

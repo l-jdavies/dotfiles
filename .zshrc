@@ -150,3 +150,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # run rbenv as default
 eval "$(rbenv init -)"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
