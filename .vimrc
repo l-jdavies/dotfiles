@@ -20,7 +20,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdtree'
 Plugin 'xuyuanp/nerdtree-git-plugin'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-endwise'
@@ -39,9 +39,6 @@ Plugin 'neoclide/coc.nvim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'airblade/vim-rooter'
-
-" Add icons
-Plugin 'ryanoasis/vim-devicons'
 
 call vundle#end()
 
@@ -88,6 +85,10 @@ set updatetime=100
 
 " Map the :NERDTree command to ctrl+n
 :nnoremap <C-n> :NERDTreeToggle<CR>
+
+" Use nerdfonts in nerdtree
+let g:NERDTreeGitStatusUseNerdFonts = 1
+
 
 " Source config file for coc.nvim
 source $HOME/.config/nvim/plug-config/coc.vim
