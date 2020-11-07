@@ -40,6 +40,9 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'airblade/vim-rooter'
 
+" Add icons
+Plugin 'ryanoasis/vim-devicons'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -85,9 +88,6 @@ set updatetime=100
 
 " Map the :NERDTree command to ctrl+n
 :nnoremap <C-n> :NERDTreeToggle<CR>
-
-" Close NERDTree once file is opened
-let NERDTreeQuitOnOpen=1
 
 " Source config file for coc.nvim
 source $HOME/.config/nvim/plug-config/coc.vim
