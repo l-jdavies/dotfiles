@@ -25,6 +25,7 @@ Plugin 'xuyuanp/nerdtree-git-plugin'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-endwise'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'majutsushi/tagbar'
 
 " HTML and CSS validation plugin using W3C validator API
 Plugin 'arunsahadeo/webval'  
@@ -86,9 +87,8 @@ set updatetime=100
 " Map the :NERDTree command to ctrl+n
 :nnoremap <C-n> :NERDTreeToggle<CR>
 
-" Use nerdfonts in nerdtree
-let g:NERDTreeGitStatusUseNerdFonts = 1
-
+" Map tagbar to ctrl+t
+nmap <C-t> :TagbarToggle<CR>
 
 " Source config file for coc.nvim
 source $HOME/.config/nvim/plug-config/coc.vim
