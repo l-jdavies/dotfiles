@@ -41,6 +41,7 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'airblade/vim-rooter'
 
+Plugin 'honza/vim-snippets'
 call vundle#end()
 
 filetype plugin indent on
