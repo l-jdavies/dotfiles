@@ -26,6 +26,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-endwise'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'majutsushi/tagbar'
+Plugin 'fatih/vim-go'
 
 " HTML and CSS validation plugin using W3C validator API
 Plugin 'arunsahadeo/webval'  
