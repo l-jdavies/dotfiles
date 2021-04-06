@@ -113,7 +113,8 @@ nmap <C-t> :TagbarToggle<CR>
 " Source config file for coc.nvim
 source $HOME/.config/nvim/plug-config/coc.vim
 
-
+" Automatically run gofmt -w when golang files are saved
+au BufWritePost *.go !gofmt -w %
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "General
