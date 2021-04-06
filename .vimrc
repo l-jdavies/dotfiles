@@ -1,4 +1,23 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" coc extensions
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Extensions listed below will be automatically installed after setup
+" of the coc plugin
+
+let g:coc_global_extensions = [
+\ 'coc-snippets',
+\ 'coc-eslint',
+\ 'coc-tsserver',
+\ 'coc-html',
+\ 'coc-css',
+\ 'coc-vimlsp',
+\ 'coc-stylelint',
+\ 'coc-solargraph',
+\ 'coc-json',
+\ 'coc-go'
+\ ]
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Vundle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -26,7 +45,6 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-endwise'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'majutsushi/tagbar'
-Plugin 'fatih/vim-go'
 
 " HTML and CSS validation plugin using W3C validator API
 Plugin 'arunsahadeo/webval'  
@@ -95,7 +113,9 @@ nmap <C-t> :TagbarToggle<CR>
 " Source config file for coc.nvim
 source $HOME/.config/nvim/plug-config/coc.vim
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " WSL yank support
