@@ -45,6 +45,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-endwise'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'majutsushi/tagbar'
+Plugin 'fatih/vim-go'
 
 " HTML and CSS validation plugin using W3C validator API
 Plugin 'arunsahadeo/webval'  
@@ -64,6 +65,9 @@ Plugin 'honza/vim-snippets'
 call vundle#end()
 
 filetype plugin indent on
+
+" Config for vim-go
+"let g:go_gpls_enabled =1 
 
 " Config for lightline.vim plugin
 set laststatus=2
@@ -113,8 +117,9 @@ nmap <C-t> :TagbarToggle<CR>
 " Source config file for coc.nvim
 source $HOME/.config/nvim/plug-config/coc.vim
 
-" Automatically run gofmt -w when golang files are saved
-au BufWritePost *.go !gofmt -w %
+" Automatically run gofmt -w when golang files are saved (not needed with
+" vim-go)
+"au BufWritePost *.go !gofmt -w %
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "General
